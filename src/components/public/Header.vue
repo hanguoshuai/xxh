@@ -47,7 +47,7 @@ export default {
         font-size:20px;
     }
     .header .header-tit{
-       
+
 
     }
    .header .header-tit .sousuo{
@@ -59,12 +59,12 @@ export default {
         border:none;
         border-radius:5px;
         margin-top:11px;
-        
+
    }
    .header .header-tit .sousuo .icon{
        font-size:13px;
        float:left;
-       height:28px;  
+       height:28px;
        margin-top:-7px;
        margin-left:8px;
    }
@@ -76,6 +76,6 @@ export default {
         background:#eaebed;
         border:none;
         border-radius:5px;
-        
+
     }
 </style>

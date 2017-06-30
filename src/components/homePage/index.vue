@@ -5,7 +5,7 @@
              <i class="icon iconfont">&#xe60b;</i>
        </li>
       </my-header>
-      
+
     </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   name: 'my-home',
   data () {
     return {
-      
+
     }
   }
 }
