@@ -74,9 +74,9 @@ module.exports = {
         }
       }
      
-=======
-      }
->>>>>>> wy
+
+    
+
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
