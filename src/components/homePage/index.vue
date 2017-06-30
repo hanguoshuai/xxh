@@ -123,7 +123,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add "scoped" a11ttribute to limit CSS to this component only -->
 <style scoped>
 .hgs-content{
   padding-top:50px;

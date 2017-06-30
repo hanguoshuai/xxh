@@ -29,11 +29,27 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        'target':'http://m.kaola.com/getFlashSaleAndUserType.html',
+
+       
+        'target':'http://www.kaola.com',
+
         'changeOrigin':true,
         'pathRewrite':{
           '^/api':''
         }
+
+      },
+      '/api1':{
+
+        'target':'http://m.kaola.com/getFlashSaleAndUserType.html',
+
+       
+
+        'changeOrigin':true,
+        'pathRewrite':{
+          '^/api1':''
+        }
+
       },
       '/phone':{
         'target':'http://m.kaola.com/homeHotGoods.html',
@@ -58,6 +74,9 @@ module.exports = {
         }
       }
      
+=======
+      }
+>>>>>>> wy
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

@@ -2,15 +2,21 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import HomePage from '@/components/homePage'
-import ListPage from '@/components/ListPage'
+import ListPage from '@/components/listPage'
 import cartPage from '@/components/cartPage'
 import faxianPage from '@/components/faxianPage'
 import UserProfile from '@/components/faxianPage/profile'
 import UserPosts from '@/components/faxianPage/posts'
 import myPage from '@/components/myPage'
+
 import xianshigouPage from '@/components/xianshigou'
 import sousuo from '@/components/homePage/sousuo'
 import xiangqing from '@/components/xiangqingPage'
+
+import Register from '@/components/login/register'
+
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -54,6 +60,7 @@ export default new Router({
       path: '/mine',
       name: 'myPage',
       component: myPage
+
     },
     {
       path: '/sousuo',
@@ -69,6 +76,12 @@ export default new Router({
       path: '/xiangqing/:id',
       name: 'xiangqing',
       component: xiangqing
+
+    },{
+      path: '/register',
+      name:'register',
+      component:Register
+
     }
   ]
 })

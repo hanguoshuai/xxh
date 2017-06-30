@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 // 引入iconfont的样式表
 import "./iconfont/iconfont.css"
+
 //引入mint-ui
 import Mint from 'mint-ui';
 Vue.use(Mint);
@@ -17,6 +18,10 @@ import Iscroll from 'iscroll'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)// vue全局使用VueResource
+
+import "./iconfont/icon3/font_2uochymme80vn29/iconfont.css"
+
+
 import MyHeader from './components/public/Header.vue'
 import MyFooter from './components/public/Footer.vue'
 import Content from './components/public/Content.vue'
@@ -25,7 +30,8 @@ Vue.component(MyHeader.name,MyHeader)
 Vue.component(MyFooter.name,MyFooter)
 Vue.component(Content.name,Content)
 Vue.config.productionTip = false
-
+Vue.use(VueResource)
+Vue.use(Mint)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
