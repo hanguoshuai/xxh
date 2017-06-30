@@ -43,7 +43,7 @@ module.exports = {
         }
       },
        '/hotkey':{
-        'target':'http://m.kaola.com/h5/hotKey.html',
+        'target':'http://m.kaola.com ',
         'changeOrigin':true,
         'pathRewrite':{
           '^/hotkey':''

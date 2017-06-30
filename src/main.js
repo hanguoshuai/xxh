@@ -20,6 +20,7 @@ Vue.use(VueResource)// vue全局使用VueResource
 import MyHeader from './components/public/Header.vue'
 import MyFooter from './components/public/Footer.vue'
 import Content from './components/public/Content.vue'
+
 Vue.component(MyHeader.name,MyHeader)
 Vue.component(MyFooter.name,MyFooter)
 Vue.component(Content.name,Content)
