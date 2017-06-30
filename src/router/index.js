@@ -9,6 +9,7 @@ import UserProfile from '@/components/faxianPage/profile'
 import UserPosts from '@/components/faxianPage/posts'
 import myPage from '@/components/myPage'
 
+
 import xianshigouPage from '@/components/xianshigou'
 import sousuo from '@/components/homePage/sousuo'
 import xiangqing from '@/components/xiangqingPage'
@@ -17,11 +18,23 @@ import Register from '@/components/login/register'
 
 
 
+
+import MyInfo from '@/components/MyInfo'
+import MyOrder from '@/components/MyOrder'
+import Unpaid from '@/components/Unpaid'
+import Paid from '@/components/Paid'
+import Send from '@/components/Send'
+import All from '@/components/All'
+import Cards from '@/components/Cards'
+import Favorites from '@/components/Favorites'
+import Quality from '@/components/quality'
+import Appdownload from '@/components/appdownload'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    
+
      {
       path: '/',
       name: 'HomePage',
@@ -61,6 +74,7 @@ export default new Router({
       name: 'myPage',
       component: myPage
 
+
     },
     {
       path: '/sousuo',
@@ -82,6 +96,45 @@ export default new Router({
       name:'register',
       component:Register
 
-    }
+   
+
+    },
+    {
+     path: '/myinfo',
+     name: 'myinfo',
+     component:MyInfo
+   },
+   {
+    path: '/cards',
+    name: 'Cards',
+    component:Cards
+  },
+  {
+   path: '/favorites',
+   name: 'Favorites',
+   component:Favorites
+ },
+ {
+  path: '/quality',
+  name: 'Quality',
+  component:Quality
+},
+{
+ path: '/appdownload',
+ name: 'Appdownload',
+ component:Appdownload
+},
+   {
+    path: '/myorder',
+    name:'myorder',
+    component:MyOrder,
+    children:[
+      {path:'',component:All},
+      {path:'unpaid',component:Unpaid},
+      {path:'paid',component:Paid},
+      {path:'send',component:Send}
+    ]
+  }
+
   ]
 })

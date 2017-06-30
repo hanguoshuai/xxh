@@ -5,17 +5,21 @@
   ],
   "plugins": ["transform-runtime",
   ["component", [
+
       {
         "libraryName": "mint-ui",
         "style": true
       }
     ]]
   ],
-   "comments": false,
-  "env": {
-    "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": [ "istanbul" ]
-    }
-  }
+   "comments": false
+
+ 
+
+  // "env": {
+  //   "test": {
+  //     "presets": ["env", "stage-2"],
+  //     "plugins": [ "istanbul" ]
+  //   }
+  // }
 }

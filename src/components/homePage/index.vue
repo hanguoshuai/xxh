@@ -14,6 +14,7 @@
              
        </li>
       </my-header>
+
      <!--内容部分-->
        <div class='hgs-content'>  
         <mt-navbar v-model="selected">
@@ -54,6 +55,7 @@
         </mt-tab-container> 
       </div>
       
+
     </div>
 </template>
 
@@ -71,6 +73,7 @@ export default {
   name: 'my-home',
   data () {
     return {
+
       selected:'1',
       hgslistData:[],
       hgsgoodList:[],
@@ -94,6 +97,7 @@ export default {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0
       
+
     }
   },
   mounted(){
@@ -125,6 +129,7 @@ export default {
 
 <!-- Add "scoped" a11ttribute to limit CSS to this component only -->
 <style scoped>
+
 .hgs-content{
   padding-top:50px;
  
@@ -146,3 +151,4 @@ export default {
   
 }
 </style>
+
