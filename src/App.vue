@@ -27,7 +27,15 @@ input{
 a{
   text-decoration:none;
 }
-
+ .v-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
