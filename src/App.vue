@@ -1,7 +1,9 @@
 <template>
   <div id="app">
    
-    <router-view></router-view>
+    <router-view>
+    
+    </router-view>
     <my-footer></my-footer>
   </div>
 </template>
@@ -18,17 +20,26 @@ export default {
   padding:0px;
   margin:0px;
 }
+html,body{
+  
+}
 ul,li{
   list-style:none;
 }
 input{
   outline:none;
 }
+
 a{
   text-decoration:none;
 }
+.mt-progress-runway{
+    border-radius:5px;
 
-
+}
+.mt-progress-progress{
+  background-color:red;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

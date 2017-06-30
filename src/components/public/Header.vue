@@ -14,9 +14,10 @@
             <li  class="header-btn">
                <slot name="right">
                     <i class="icon iconfont">&#xe6a6;</i>
-               </slot>
+               </slot> 
             </li>
         </ul>
+       
     </div>
 </template>
 
@@ -39,10 +40,10 @@ export default {
 <style scoped>
     .header { height: 47px; position: fixed; width: 100%;background:#fff;
     font-size:30px;
-         line-height: 44px; border-bottom: 1px solid #ccc}
+         line-height: 44px; border-bottom: 1px solid #ccc;z-index:100;}
     .header  ul { display: flex;text-align: center}
     .header-tit { flex: 1 }
-    .header-btn {width: 60px; }
+    .header-btn {width: 60px;font-size:14px; }
     .header .icon{
         font-size:20px;
     }

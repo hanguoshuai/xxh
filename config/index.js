@@ -27,12 +27,43 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api':{
+        'target':'http://m.kaola.com/getFlashSaleAndUserType.html',
+        'changeOrigin':true,
+        'pathRewrite':{
+          '^/api':''
+        }
+      },
+      '/phone':{
+        'target':'http://m.kaola.com/homeHotGoods.html',
+        'changeOrigin':true,
+        'pathRewrite':{
+          '^/phone':''
+        }
+      },
+       '/hotkey':{
+        'target':'http://m.kaola.com/h5/hotKey.html',
+        'changeOrigin':true,
+        'pathRewrite':{
+          '^/hotkey':''
+        }
+      },
+    //限时抢购
+       '/time':{
+        'target':'http://m.kaola.com',
+        'changeOrigin':true,
+        'pathRewrite':{
+          '^/time':''
+        }
+      }
+     
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
-    cssSourceMap: false
+    cssSourceMap: true
   }
 }
